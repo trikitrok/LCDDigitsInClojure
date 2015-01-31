@@ -11,10 +11,13 @@
     (= n 0) "| |\n"
     :else "  |\n"))
 
-(defn display [n]
-  (str (first-row n)
-       (second-row n)
-       (if (= n 0)
-         "|_|\n"
-         "  |\n")))
+(defn- third-row [n]
+  (if (= n 0)
+    "|_|\n"
+    "  |\n"))
 
+(defn display [n]
+  (str 
+    (first-row n)
+    (second-row n)
+    (third-row n)))
