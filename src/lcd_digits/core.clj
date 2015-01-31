@@ -6,12 +6,15 @@
     " _ \n"))
 
 (defn- second-row [n]
-  (if (= n 4)
-    "|_|\n"
-    "  |\n"))
+  (cond 
+    (= n 4) "|_|\n"
+    (= n 0) "| |\n"
+    :else "  |\n"))
 
 (defn display [n]
   (str (first-row n)
        (second-row n)
-       "  |\n"))
+       (if (= n 0)
+         "|_|\n"
+         "  |\n")))
 

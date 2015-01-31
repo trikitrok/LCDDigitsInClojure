@@ -19,4 +19,9 @@
     "4 is displayed"
     (display 4) => (str "   \n"
                         "|_|\n"
-                        "  |\n")))
+                        "  |\n"))
+  (fact 
+    "0 is displayed"
+    (display 0) => (str " _ \n"
+                        "| |\n"
+                        "|_|\n")))
