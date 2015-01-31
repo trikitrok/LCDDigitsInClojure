@@ -1,10 +1,12 @@
 (ns lcd-digits.core)
 
-(defn display [n]
+(defn- first-row [n]
   (if (= n 1)
-    (str "   \n"
-         "  |\n"
-         "  |\n")
-    (str " _ \n"
-         "  |\n"
-         "  |\n")))
+    "   \n"
+    " _ \n"))
+
+(defn display [n]
+  (str (first-row n)
+       "  |\n"
+       "  |\n"))
+
