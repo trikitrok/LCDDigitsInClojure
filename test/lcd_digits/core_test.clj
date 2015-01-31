@@ -11,4 +11,8 @@
   
   (display 7) => (str " _ \n"
                       "  |\n"
+                      "  |\n")
+  
+  (display 4) => (str "   \n"
+                      "|_|\n"
                       "  |\n"))
