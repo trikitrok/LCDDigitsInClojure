@@ -3,7 +3,7 @@
   (:use [lcd-digits.core]))
 
 (facts 
-  "LCD digits"
+  "LCD digits for numbers"
   
   (facts 
     "with one digit"
@@ -57,4 +57,11 @@
       "8 is displayed"
       (display 8) => (str " _ \n"
                           "|_|\n"
-                          "|_|\n"))))
+                          "|_|\n")))
+  
+  (facts 
+    "with several digits"
+    
+    (display 18) => (str  "     _ \n"
+                          "  | |_|\n"
+                          "  | |_|\n")))

@@ -20,11 +20,14 @@
     (= n 2) "|_ "
     :else "  |"))
 
+(defn- digits-in [n]
+  (map #(Integer/parseInt (str %)) (str n)))
+
 (defn display [n]
   (str 
-    (first-row n)
+    (clojure.string/join " " (map first-row (digits-in n)))
     "\n"
-    (second-row n)
+    (clojure.string/join " " (map second-row (digits-in n)))
     "\n"
-    (third-row n)
+    (clojure.string/join " " (map third-row (digits-in n)))
     "\n"))
