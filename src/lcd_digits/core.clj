@@ -5,10 +5,13 @@
     "   \n"
     " _ \n"))
 
+(defn- second-row [n]
+  (if (= n 4)
+    "|_|\n"
+    "  |\n"))
+
 (defn display [n]
   (str (first-row n)
-       (if (= n 4)
-         "|_|\n"
-         "  |\n")
+       (second-row n)
        "  |\n"))
 
