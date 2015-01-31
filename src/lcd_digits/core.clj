@@ -10,12 +10,14 @@
     (= n 4) "|_|\n"
     (= n 0) "| |\n"
     (= n 5) "|_ \n"
+    (= n 2) " _|\n"
     :else "  |\n"))
 
 (defn- third-row [n]
   (cond 
     (= n 0) "|_|\n"
     (= n 5) " _|\n"
+    (= n 2) "|_ \n"
     :else "  |\n"))
 
 (defn display [n]
