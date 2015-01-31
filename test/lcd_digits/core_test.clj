@@ -5,14 +5,18 @@
 (facts 
   "about LCD digits"
   
-  (display 1) => (str "   \n"
-                      "  |\n"
-                      "  |\n")
-  
-  (display 7) => (str " _ \n"
-                      "  |\n"
-                      "  |\n")
-  
-  (display 4) => (str "   \n"
-                      "|_|\n"
-                      "  |\n"))
+  (fact 
+    "1 is displayed"
+    (display 1) => (str "   \n"
+                        "  |\n"
+                        "  |\n"))
+  (fact 
+    "7 is displayed"
+    (display 7) => (str " _ \n"
+                        "  |\n"
+                        "  |\n"))
+  (fact 
+    "4 is displayed"
+    (display 4) => (str "   \n"
+                        "|_|\n"
+                        "  |\n")))
