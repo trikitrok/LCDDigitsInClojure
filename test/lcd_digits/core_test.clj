@@ -63,5 +63,9 @@
     "with several digits"
     
     (display 18) => (str  "     _ \n"
-                          "  | |_|\n"
-                          "  | |_|\n")))
+                         "  | |_|\n"
+                         "  | |_|\n")
+    
+    (display 910) => (str " _       _ \n"
+                          "|_|   | | |\n"
+                          "  |   | |_|\n")))
