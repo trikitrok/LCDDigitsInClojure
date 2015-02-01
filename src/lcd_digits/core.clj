@@ -29,8 +29,7 @@
   (str 
     (join 
       " " 
-      (map (fns-by-row row-num) 
-           (digits-in n)))
+      (map (fns-by-row row-num) (digits-in n)))
     "\n"))
 
 (defn display [n]
