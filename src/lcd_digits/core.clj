@@ -1,4 +1,5 @@
-(ns lcd-digits.core)
+(ns lcd-digits.core
+  (:require [clojure.string :refer [join]]))
 
 (defn- digits-in [n]
   (map #(Integer/parseInt (str %)) (str n)))
@@ -26,7 +27,7 @@
 
 (defn- row [row-num n]
   (str 
-    (clojure.string/join 
+    (join 
       " " 
       (map (fns-by-row row-num) 
            (digits-in n)))
